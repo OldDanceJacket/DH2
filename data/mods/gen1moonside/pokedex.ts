@@ -10,30 +10,30 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 33, atk: 136, def: 0, spa: 6, spd: 6, spe: 29},
 	},
 	bulbasaur: {
-		inherit: true,
+		inherit: false,
 		types: ["Normal", "Psychic"],
 		baseStats: {hp: 80, atk: 82, def: 83, spa: 100, spd: 100, spe: 80},
 	},
 	ivysaur: {
-		inherit: true,
+		inherit: false,
 		types: ["Normal", "Psychic"],
 		baseStats: {hp: 60, atk: 62, def: 63, spa: 80, spd: 80, spe: 60},
 	},
 	venusaur: {
-		inherit: true,
+		inherit: false,
 		types: ["Normal", "Psychic"],
 		baseStats: {hp: 45, atk: 49, def: 49, spa: 65, spd: 65, spe: 45},
 	},
 	charmander: {
-		inherit: true,
+		inherit: false,
 		baseStats: {hp: 39, atk: 52, def: 43, spa: 50, spd: 50, spe: 65},
 	},
 	charmeleon: {
-		inherit: true,
+		inherit: false,
 		baseStats: {hp: 58, atk: 64, def: 58, spa: 65, spd: 65, spe: 80},
 	},
 	charizard: {
-		inherit: true,
+		inherit: false,
 		types: ["Ghost"],
 		baseStats: {hp: 78, atk: 88, def: 78, spa: 85, spd: 85, spe: 96},
 	},
@@ -47,15 +47,18 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 59, atk: 63, def: 80, spa: 65, spd: 65, spe: 58},
 	},
 	blastoise: {
-		inherit: true,
+		inherit: false,
 		baseStats: {hp: 79, atk: 83, def: 100, spa: 85, spd: 85, spe: 78},
-		prevo: "Blastyke",
+		prevo: "Caterpie",
 		evoLevel: 36,
 	},
 	caterpie: {
-		inherit: true,
+		inherit: false,
 		types: ["Water"],
 		baseStats: {hp: 59, atk: 63, def: 80, spa: 65, spd: 65, spe: 58},
+		prevo: "Squirtle",
+		evoLevel: 36,
+		evos: ["Totartle"],
 	},
 	metapod: {
 		inherit: true,
@@ -365,11 +368,11 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	doduo: {
 		inherit: true,
-		baseStats: {hp: 35, atk: 85, def: 45, spa: 35, spd: 35, spe: 75},
+		baseStats: {hp: 35, atk: 75, def: 65, spa: 35, spd: 35, spe: 50},
 	},
 	dodrio: {
 		inherit: true,
-		baseStats: {hp: 60, atk: 110, def: 70, spa: 60, spd: 60, spe: 100},
+		baseStats: {hp: 60, atk: 90, def: 80, spa: 70, spd: 70, spe: 60},
 	},
 	seel: {
 		inherit: true,
@@ -410,7 +413,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	onix: {
 		inherit: true,
-		baseStats: {hp: 35, atk: 45, def: 160, spa: 30, spd: 30, spe: 70},
+		types: ["Ice"],
+		baseStats: {hp: 55, atk: 45, def: 210, spa: 40, spd: 40, spe: 70},
 	},
 	drowzee: {
 		inherit: true,
@@ -517,6 +521,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	staryu: {
 		inherit: true,
+		types: ["water", "psychic", "bug"],
 		baseStats: {hp: 30, atk: 45, def: 55, spa: 70, spd: 70, spe: 85},
 	},
 	starmie: {

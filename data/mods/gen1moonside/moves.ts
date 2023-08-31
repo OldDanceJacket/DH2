@@ -145,12 +145,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		accuracy: 90,
 		target: "normal",
 	},
-	brutalswing: {
-		inherit: true,
-		category: "Special",
-		type: "Dark",
-		gen: 1,
-	},
 	bubble: {
 		inherit: true,
 		secondary: {
@@ -169,18 +163,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 				spe: -1,
 			},
 		},
-	},
-	bulletpunch: {
-		inherit: true,
-		category: "Physical",
-		type: "Steel",
-		gen: 1,
-	},
-	charm: {
-		inherit: true,
-		category: "Status",
-		type: "Fairy",
-		gen: 1,
 	},
 	clamp: {
 		inherit: true,
@@ -227,18 +209,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		category: "Special",
 		willCrit: true,
-	},
-	darkvoid: { // unused
-		inherit: true,
-		category: "Status",
-		type: "Dark",
-		gen: 1,
-	},
-	dazzlinggleam: {
-		inherit: true,
-		category: "Special",
-		type: "Fairy",
-		gen: 1,
 	},
 	dig: {
 		inherit: true,
@@ -312,45 +282,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		basePower: 1,
 	},
-	drainingkiss: {
-		inherit: true,
-		category: "Special",
-		type: "Fairy",
-		gen: 1,
-	},
 	explosion: {
 		inherit: true,
 		basePower: 170,
 		target: "normal",
-	},
-	fairywind: {
-		inherit: true,
-		category: "Special",
-		type: "Fairy",
-		gen: 1,
-	},
-	faketears: {
-		inherit: true,
-		category: "Status",
-		type: "Dark",
-		target: "normal",
-		gen: 1,
-		boosts: {
-			spd: -2,
-			spa: -2,
-		},
-	},
-	falsesurrender: {
-		inherit: true,
-		category: "Special",
-		type: "Dark",
-		gen: 1,
-	},
-	feintattack: {
-		inherit: true,
-		category: "Special",
-		type: "Dark",
-		gen: 1,
 	},
 	fireblast: {
 		inherit: true,
@@ -481,18 +416,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		target: "normal",
 		type: "Normal",
 	},
-	irondefense: {
-		inherit: true,
-		category: "Status",
-		type: "Steel",
-		gen: 1,
-	},
-	ironhead: {
-		inherit: true,
-		category: "Physical",
-		type: "Steel",
-		gen: 1,
-	},
 	jumpkick: {
 		inherit: true,
 		onMoveFail(target, source, move) {
@@ -572,22 +495,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		target: "self",
 		type: "Psychic",
 	},
-	magnetbomb: {
-		inherit: true,
-		category: "Physical",
-		type: "Steel",
-		gen: 1,
-	},
-	metalsound: {
-		inherit: true,
-		category: "Status",
-		type: "Steel",
-		gen: 1,
-		boosts: {
-			spd: -2,
-			spa: -2,
-		},
-	},
 	metronome: {
 		inherit: true,
 		noMetronome: ["Metronome", "Struggle"],
@@ -627,48 +534,14 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			this.actions.useMove(foe.lastMove.id, pokemon);
 		},
 	},
-	mirrorshot: {
-		inherit: true,
-		category: "Physical",
-		type: "Steel",
-		gen: 1,
-	},
 	mist: {
 		inherit: true,
-	},
-	naturesmadness: { // unused
-		inherit: true,
-		category: "Special",
-		type: "Fairy",
-		gen: 1,
-	},
-	nastyplot: {
-		inherit: true,
-		boosts: {
-			spd: 2,
-			spa: 2,
-		},
-		category: "Status",
-		type: "Dark",
-		gen: 1,
 	},
 	nightshade: {
 		inherit: true,
 		category: "Physical",
 		ignoreImmunity: true,
 		basePower: 1,
-	},
-	nightslash: {
-		inherit: true,
-		category: "Special",
-		type: "Dark",
-		gen: 1,
-	},
-	playrough: {
-		inherit: true,
-		category: "Special",
-		type: "Fairy",
-		gen: 1,
 	},
 	poisonsting: {
 		inherit: true,
@@ -821,20 +694,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		basePower: 130,
 		target: "normal",
 	},
-	shelter: { // unused; filled in manually
-		inherit: true,
-		category: "Status",
-		type: "Steel",
-		gen: 1,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Shelter",
-		pp: 10,
-		secondary: null,
-		target: "self",
-		type: "Steel",
-	},
 	skullbash: {
 		inherit: true,
 		onTryMove(attacker, defender, move) {
@@ -860,12 +719,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			chance: 40,
 			status: 'psn',
 		},
-	},
-	smartstrike: {
-		inherit: true,
-		category: "Physical",
-		type: "Steel",
-		gen: 1,
 	},
 	softboiled: {
 		inherit: true,
@@ -981,12 +834,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		gen: 1,
 	},
-	sweetkiss: {
-		inherit: true,
-		category: "Status",
-		type: "Fairy",
-		gen: 1,
-	},
 	thunder: {
 		inherit: true,
 		secondary: {
@@ -1046,5 +893,26 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 				}
 			}
 		},
+	},
+	/**
+ * NEW MOVES START HERE.
+ * Oh, Lucas. What are you doing here. Are you lost? Oh, there's nothing wrong with being lost.
+ */
+	phone: { // boom + wisp
+		num: -1,
+		basePower: 50,
+		accuracy: 100,
+		pp: 5,
+		category: "Special",
+		type: "Fire",
+		target: "allAdjacent",
+		flags: {protect: 1, mirror: 1},
+		selfdestruct: "always",
+		secondary: {
+			chance: 100,
+			status: 'brn',
+		},
+		priority: 0,
+		name: "Phone",
 	},
 };
